@@ -13,6 +13,8 @@ node consumer.js
 // Produce dummy data
 node producer.js
 
+... Wait for consuming end
+
 // Make sure that chat queue does not corrupt
 node checkQueue.js
 ```
