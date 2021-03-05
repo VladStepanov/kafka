@@ -21,7 +21,7 @@ const writeFile = util.promisify(fs.writeFile);
     partitionsConsumedConcurrently: os.cpus().length,
     async eachMessage ({ topic, partition, message }) {
       await new Promise(resolve => {
-        setTimeout(resolve, Math.random() * 2);
+        setTimeout(resolve, Math.random() * 50);
       })
 
       const msg = {
